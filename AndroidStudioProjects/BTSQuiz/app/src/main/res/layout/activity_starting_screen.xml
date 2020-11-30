@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain2"
+    android:padding="16dp"
+    tools:context="com.sani.btsquiz.StartingScreenActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/breathings"
+        android:text="BTS Trivia"
+        android:textColor="@color/lightpurple"
+        android:textStyle="bold"
+        android:textSize="50sp" />
+    <TextView
+        android:id="@+id/text_view_highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_start_quiz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/arizona"
+        android:text="Highscore: 0"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp" />
+    <Button
+        style="@style/AppTheme"
+        android:id="@+id/button_start_quiz"
+        android:onClick="PlayBackgroundSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/barcodefont"
+        android:background="@drawable/beginbutton"
+        android:alpha="0.75"
+        android:textSize="60sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Begin" />
+</RelativeLayout>

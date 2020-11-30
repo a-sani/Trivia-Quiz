@@ -1,0 +1,3 @@
+include ':spotify-app-remote-release'
+include ':app'
+rootProject.name = "BTS Quiz"
