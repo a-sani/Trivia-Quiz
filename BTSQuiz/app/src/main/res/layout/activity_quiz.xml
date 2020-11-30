@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain3"
+    android:padding="16dp"
+    android:id="@+id/screenView"
+    tools:context="com.sani.btsquiz.QuizActivity">
+    <TextView
+        android:id="@+id/text_view_score"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/arizona"
+        android:alpha="0.60"
+        android:freezesText="true"/>
+    <TextView
+        android:id="@+id/text_view_question_count"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_score"
+        android:fontFamily="@font/arizona"
+        android:text="Question: 1/x"
+        android:background="#FFFFFF"
+        android:alpha="0.60"
+
+        android:textColor="@android:color/black"
+        android:freezesText="true"/>
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/digital"
+        android:text="00:30"
+        android:alpha="0.60"
+        android:background="#FFFFFF"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:freezesText="true"/>
+
+    <TextView
+        android:id="@+id/text_view_question"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_view_question_count"
+        android:background="#FFFFFF"
+        android:freezesText="true"
+        android:fontFamily="@font/cl"
+        android:textStyle="italic"
+        android:text="Here will be the question text\nHere will be the question text\nHere will be the question text"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:alpha="0.70"
+        android:textSize="25sp"
+        android:layout_marginTop="100dp"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_question"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:alpha="0.70"
+        android:layout_centerVertical="true">
+        <RadioButton
+            android:id="@+id/radio_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:textStyle="bold"
+            android:fontFamily="@font/cl"
+            android:freezesText="true"/>
+        <RadioButton
+            android:id="@+id/radio_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cl"
+            android:text="Option 2"
+            android:textStyle="bold"
+            android:freezesText="true"/>
+        <RadioButton
+            android:id="@+id/radio_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cl"
+            android:text="Option 3"
+            android:textStyle="bold"
+            android:freezesText="true"/>
+        <RadioButton
+            android:id="@+id/radio_button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cl"
+            android:text="Option 4"
+            android:textStyle="bold"
+            android:freezesText="true"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/button_confirm_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/radio_group"
+        android:layout_marginTop="10dp"
+        android:alpha=".70"
+        android:textSize="20dp"
+        android:text="Confirm"
+        android:fontFamily="@font/arizona"
+        android:textStyle="bold"
+        android:background="@drawable/buttons"
+        android:freezesText="true"/>
+</RelativeLayout>
